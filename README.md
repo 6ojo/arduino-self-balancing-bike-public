@@ -34,11 +34,11 @@ when the absolute error exceeds 15 degrees, the controller switches from balance
 
 ## results and current limits
 
-the project report records three physical trials per gain setting. the selected combination was approximately `kp = 50`, `kd = 5`, and `kf = 1`. the three reported trials for that combined setting lasted 2.32, 2.90, and 2.27 seconds, with a reported average of 2.50 seconds. these are prototype measurements rather than a guarantee of repeatable sustained balance.
+the best recorded physical run lasted approximately 8 seconds, supported by both the [demo gif](media/balance-demo.gif) and the [telemetry capture](media/balance-telemetry.png). at the selected gains (`kp ≈ 50`, `kd ≈ 5`, `kf ≈ 1`), the three trials lasted 2.32, 2.90, and 2.27 seconds, averaging about 2.50 seconds, the repeatability figure for that setting; these are prototype measurements, not a guarantee of sustained balance.
 
-a separate [telemetry capture](media/balance-telemetry.png) shows approximately eight seconds between the balance-on and tip-detection messages. that capture records software events; it does not independently establish the bike's motion throughout the interval. the short demo above shows a physical trial.
+the telemetry capture records software events from balance-on to tip-detected approximately 8 seconds apart and corroborates the gif.
 
-all 11 completed sketch folders were compiled for their target boards during preparation of this public snapshot, and each `.ino` has a byte-identical `.txt` copy. the ble and communication-fault variants remain experimental: compilation does not verify phone connectivity, fault recovery, or physical balance performance.
+all 11 completed sketch folders were compiled for their target boards during preparation of this public snapshot, and each `.ino` has a byte-identical `.txt` copy; the ble and communication-fault variants remain experimental, since compilation does not verify phone connectivity, fault recovery, or physical balance performance.
 
 ## repository guide
 
