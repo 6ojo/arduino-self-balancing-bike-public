@@ -1,0 +1,21 @@
+# generated build and preview files
+tmp/
+build/
+.arduino/
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.a
+
+# local editor and operating-system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+~$*
+
+# local credentials
+.env
+.env.*

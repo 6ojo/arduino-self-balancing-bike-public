@@ -1,0 +1,9 @@
+*.ino text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+*.pdf binary
+*.png binary
+*.gif binary
+*.mp4 binary
